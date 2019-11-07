@@ -198,7 +198,7 @@ header nav a {
 }
 .bottom-content .text-content h3 {
   font-size: 40px;
-  width: 30%;
+  width: 40%;
   height: 6%;
 }
 .bottom-content .text-content p {
@@ -211,7 +211,7 @@ header nav a {
   height: 440%;
 }
 .contact div {
-  margin: 2% 4%;
+  margin: 2% ;
 }
 .contact div h4 {
   font-size: 50px;
