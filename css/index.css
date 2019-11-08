@@ -130,6 +130,14 @@ table {
 * {
   box-sizing: border-box;
 }
+.font-class {
+  color: black;
+  font-size: 30px;
+  text-align: center;
+}
+.heading {
+  font-size: 45px;
+}
 html,
 body {
   height: 100%;
@@ -143,15 +151,13 @@ body {
 }
 header {
   display: flex;
-  margin: 1% 4%;
+  font-size: 32px;
+  margin: 1% ;
+  width: 100%;
 }
 header div {
-  width: 20%;
-}
-header div h1 {
-  color: #355a5a;
-  font-size: 25px;
-  margin-top: 17%;
+  width: 40%;
+  padding: 3%;
 }
 header nav {
   width: 80%;
@@ -169,7 +175,6 @@ header nav a {
 }
 .about {
   display: flex;
-  margin: 2% 4%;
 }
 .about .img {
   margin-right: 4%;
@@ -178,13 +183,12 @@ header nav a {
   width: 40%;
 }
 .about .text h2 {
-  font-size: 40px;
-  margin: 2% 0 2% 0;
+  font-size: 45px;
 }
 .about .text p {
+  color: black;
   font-size: 30px;
-  margin-top: 2%;
-  padding: 4%;
+  text-align: center;
 }
 .bottom-content {
   display: flex;
@@ -197,39 +201,130 @@ header nav a {
   padding: 2%;
 }
 .bottom-content .text-content h3 {
-  font-size: 40px;
-  width: 30%;
-  height: 6%;
+  font-size: 45px;
 }
 .bottom-content .text-content p {
-  width: 100%;
-  margin-top: 4%;
+  color: black;
   font-size: 30px;
+  text-align: center;
+  margin-top: 4%;
 }
 .contact {
   margin: auto;
   height: 440%;
 }
-.contact div {
-  margin: 2% 4%;
-}
-.contact div h4 {
+.contact h4 {
   font-size: 50px;
 }
-.contact div a {
+.contact div {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.contact div a {
   font-size: 20px;
-  margin-top: 2%;
+  margin: 2%;
+  margin-bottom: 5%;
 }
 @media (max-width: 500px) {
   .container {
-    width: auto;
-    margin-right: 20px;
-    margin-left: 20px;
-    border: none;
+    width: 100%;
+    margin: auto;
+    background-image: none;
   }
   header {
-    border: red solid 2px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 100px;
+  }
+  header div {
+    display: flex;
+    width: 100%;
+    font-size: 100px;
+    justify-content: center;
+  }
+  header nav {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 15% 20%;
+  }
+  header nav a {
+    height: 2%;
+    width: 4%;
+    display: flex;
+    margin-top: 10%;
+    font-size: 40px;
+    color: #7c5858;
+    align-items: center;
+    border-bottom: solid aqua;
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+    margin: 2% 4%;
+  }
+  .about .img {
+    height: 100%;
+    width: 100%;
+    margin-right: 4%;
+  }
+  .about .text {
+    width: 100%;
+  }
+  .about .text h2 {
+    font-size: 40px;
+    margin: 2% 0 2% 0;
+  }
+  .about .text p {
+    font-size: 20px;
+    margin-top: 2%;
+    padding: 4%;
+  }
+  .bottom-content {
+    width: 95%;
+    height: 100%;
+    margin: 4% 4%;
+    display: flex;
+  }
+  .bottom-content flex-direction:column .text-content {
+    width: 50%;
+    padding: 2%;
+  }
+  .bottom-content flex-direction:column .text-content h3 {
+    font-size: 15px;
+    width: 40%;
+    height: 6%;
+    margin-bottom: 4%;
+  }
+  .bottom-content flex-direction:column .text-content p {
+    width: 100%;
+    margin-top: 4%;
+    font-size: 6px;
+  }
+  .contact {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .contact h4 {
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+  }
+  .contact div {
+    margin: 2% ;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: lightcoral;
+  }
+  .contact div a {
+    font-size: 25px;
+    font-style: italic;
+    margin-top: 2%;
   }
 }
